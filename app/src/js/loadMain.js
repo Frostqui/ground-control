@@ -28,10 +28,12 @@ function loadIframe() {
                 if (a.other && a.other.useSR === false) {
                   $('.goto_sr').remove();
                   $('.goto_pop').remove();
+                 
                   $('#main').html(`<webview id="frame_pop" src="https://${url}/dashboard/${res.username || '%20'}/activity/popout" class="frame"></webview>`);
                 } else {
                   $('#main').html(`<webview id="frame_pop" src="https://${url}/dashboard/${res.username || '%20'}/activity/popout" class="frame"></webview>` +
                                         `<webview id="frame_sr" src="https://${url}/dashboard/songrequest/general" class="frame"></webview>`);
+                                        
                 }
                 if (currentPage !== '#settings') {
                   $('.goto_sr').css('display', 'inline-block');

@@ -38,6 +38,7 @@
     <!---->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/chat.css">
     <script src="js/dep.js"></script>
 </head>
 <body>
@@ -50,11 +51,14 @@
             <div id="updateProgress" class="mdl-progress mdl-js-progress hidden"></div>
         </div>
         <div id="nav">
+
+              
+
             <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect goto_sr">
                 <i class="material-icons">music_note</i>
             </button>
             <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect goto_pop">
-                <i class="material-icons">menu</i>
+                <i class="material-icons">arrow_back</i>
             </button>
             <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect goto_settings">
                 <i class="material-icons">settings</i>
@@ -62,14 +66,24 @@
             <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect goBack">
                 <i class="material-icons">arrow_back</i>
             </button>
+
+          
         </div>
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect goto_chat">
+                <i class="material-icons">mode_comment</i>
+            </button>
         <div id="main">
+            
             <div id="error"></div>
         </div>
         <webview id="settings" nodeintegration src="settings/settings.html" class="frame"></webview>
+
+        <div id="chat" class="frame"></div>
     </div>
+    <script src="js/twitch_chat.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/updater.js"></script>
+    
 </body>
 
 </html>

@@ -13,7 +13,7 @@
     "author": "StreamElements",
     "license": "MIT",
     "devDependencies": {
-        "electron": "^1.7.9",
+        "electron": "1.7.10",
         "electron-builder": "^19.31.1",
         "electron-builder-squirrel-windows": "^19.30.3"
     },
@@ -51,5 +51,14 @@
             "category": "Utility",
             "icon": "app/src/linux/"
         }
+    },
+    "dependencies": {
+        "chokidar": "^2.0.0",
+        "electron-squirrel-startup": "^1.0.0",
+        "electron-window-state": "^4.1.1",
+        "socket.io-client": "^2.0.4",
+        "tmi": "^2.0.0",
+        "tmi.js": "^1.2.1",
+        "twitch-chat": "^0.1.0"
     }
 }

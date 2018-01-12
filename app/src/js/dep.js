@@ -39,162 +39,200 @@ const myText = {
   'alert:skip': {
     en: 'Skip alert',
     ru: 'Пропустить оповещение',
-    fr: "Passer l'alerte"
+    fr: "Passer l'alerte",
+    es: "Saltar alerta"
   },
   'alert:stop': {
     en: 'Stop/Resume alerts',
     ru: 'Остановить/Продолжить оповещения',
-    fr: 'Arrêter/Reprendre alertes'
+    fr: 'Arrêter/Reprendre alertes',
+    es: "Parar/pausar las alertas"
   },
   'song:skip': {
     en: 'Skip song',
     ru: 'Пропустить песню',
-    fr: 'Passer la chanson'
+    fr: 'Passer la chanson',
+    es: 'Saltar la canción'
   },
   'song:stop': {
     en: 'Stop/Resume song',
     ru: 'Остановить/Продолжить песню',
-    fr: 'Arrêter reprendre la chanson'
+    fr: 'Arrêter reprendre la chanson',
+    es: 'Parar/pausar las alertas'
   },
   'song:show': {
     en: 'Show/Hide video',
     ru: 'Показать/Скрыть видео',
-    fr: 'Masquer/afficher la vidéo'
+    fr: 'Masquer/afficher la vidéo',
+    es: 'Mostrar/Ocular vídeo'
   },
   'keyboard:warning': {
     en: 'DEPENDING ON YOUR KEYBOARD-LAYOUT SOME COMBINATIONS MAY NOT WORK!',
     ru: 'В зависимости от вашей раскладки на клавиатуре некоторые комбинации могут не работать!',
-    fr: 'CERTAINES COMBINAISONS PEUVENT NE PAS FONCTIONNER EN FONCTION DE VOTRE CLAVIER !'
+    fr: 'CERTAINES COMBINAISONS PEUVENT NE PAS FONCTIONNER EN FONCTION DE VOTRE CLAVIER !',
+    es: 'DEPENDE DEL DISEÑO DE TU TECLADO, PUEDE QUE ALGUNAS COMBINACIONES NO FUNCIONEN'
   },
   'keyboard:available': {
     en: 'Available keys:',
     ru: 'Доступные клавиши:',
-    fr: 'Touches disponibles'
+    fr: 'Touches disponibles',
+    es: 'Teclas disponibles'
   },
   'keyboard:punctuations': {
     en: 'Punctuations',
     ru: 'Punctuations',
-    fr: 'Ponctuations'
+    fr: 'Ponctuations',
+    es: 'Sigos de puntuación',
   },
   'keyboard:alias:enter': {
     en: 'or Enter as alias',
     ru: 'or Enter as alias',
-    fr: 'ou Entrée'
+    fr: 'ou Entrée',
+    es: 'o Intro como alias'
   },
   'keyboard:alias:esc': {
     en: 'or Esc for short',
     ru: 'or Esc for short',
-    fr: 'ou Esc'
+    fr: 'ou Esc',
+    es: 'o escape como alias'
   },
   settings: {
     en: 'Settings',
     ru: 'Настройки',
-    fr: 'Réglages'
+    fr: 'Réglages',
+    es: 'Ajustes'
   },
   authentication: {
     en: 'Authentication',
     ru: 'Авторизация',
-    fr: 'Connexion'
+    fr: 'Connexion',
+    es: 'Autenticación'
   },
   jwt: {
     en: 'Your JWT Token...',
     ru: 'Ваш JWT Token...',
-    fr: 'Votre Token JWT...'
+    fr: 'Votre Token JWT...',
+    es: 'Tu token JWT...'
+  },
+  oauth: {
+    en: 'Your Oauth Token... (for chat display)',
+    ru: 'Ваш Oauth Token...(чат-дисплей)',
+    fr: 'Votre Oauth JWT...(affichage de chat)',
+    es: 'Tu token Oauth... (para mostrar el chat)'
   },
   'jwt:link': {
     en: 'You can find it under ',
     ru: 'Вы можете это найти там ',
-    fr: 'Disponible dans '
+    fr: 'Disponible dans ',
+    es: 'Puedes encontrarlo debajo'
   },
   account: {
     en: 'My Account',
     ru: 'Ваш аккаунт',
-    fr: 'Mon Compte'
+    fr: 'Mon Compte',
+    es: 'Mi cuenta'
   },
   'keyboard:bindings': {
     en: 'Keybindings',
     ru: 'Сочетания клавиш',
-    fr: 'Raccourcis clavier'
+    fr: 'Raccourcis clavier',
+    es: 'Atajos de teclado'
   },
   'keyboard:bindings:info': {
     en: 'Show info about keybindings',
     ru: 'Показать информацию о сочетаниях клавиш',
-    fr: "Plus d'infos sur les raccourcis clavier"
+    fr: "Plus d'infos sur les raccourcis clavier",
+    es: 'Mostrar información sobre los atajos de teclado'
   },
   other: {
     en: 'Other',
     ru: 'Другие',
-    fr: 'Divers'
+    fr: 'Divers',
+    es: 'Otro'
   },
   'use:sr': {
     en: 'Use Songrequest: ',
     ru: 'Использовать Songrequest: ',
-    fr: 'Activer le songrequest : '
+    fr: 'Activer le songrequest : ',
+    es: 'Usar Songrequest'
   },
   'use:compact': {
     en: 'Use Compact Mode: ',
     ru: 'Использовать компактный режим: ',
-    fr: 'Activer le mode réduit : '
+    fr: 'Activer le mode réduit : ',
+    es: 'Usar modo compacto'
   },
   'session:reset': {
     en: 'Reset Session',
     ru: 'Сбросить сессию',
-    fr: 'Réinitialiser la session'
+    fr: 'Réinitialiser la session',
+    es: 'Reiniciar la sesión',
   },
   updating: {
     en: '&nbsp;&nbsp;Updating',
     ru: '&nbsp;Обновляем',
-    fr: '&nbsp;Chargement'
+    fr: '&nbsp;Chargement',
+    es: '&nbsp;&nbsp;Actualizando'
   },
   'jwt:invalid': {
     en: 'You entered an invalid <a>JWT Token</a>.',
     ru: 'Вы ввели неправильный <a>JWT Token</a>.',
-    fr: 'Votre <a>Token JWT</a> est invalide.'
+    fr: 'Votre <a>Token JWT</a> est invalide.',
+    es: 'Has introducido un <a>Token JWT</a> inválido'
   },
   'jwt:500': {
     en: 'Something is wrong on our site...',
     ru: 'Что-то не так на нашем сервисе...',
-    fr: 'Oops! Notre site est inaccessible...'
+    fr: 'Oops! Notre site est inaccessible...',
+    fr: 'Algo ha fallado al conectar a nuestro sitio'
   },
   'jwt:missing': {
     en: 'To use the activity feed, please enter your <a>JWT Token</a> in the settings menu.',
     ru: 'Для получения оповещений, пожалуйста введите ваш <a>JWT Token</a> в меню настроек.',
-    fr: "Pour utiliser le fil d'actualité, veuillez saisir votre <a>Token JWT</a> dans les réglages."
+    fr: "Pour utiliser le fil d'actualité, veuillez saisir votre <a>Token JWT</a> dans les réglages.",
+    es: 'Para usar la feed, por favor introduce tu <a>JWT Token</a> en los ajustes '
   },
   loading: {
     en: '&nbsp;&nbsp;&nbsp;Loading',
     ru: 'Загружаемся',
-    fr: '&nbsp;&nbsp;Chargement'
+    fr: '&nbsp;&nbsp;Chargement',
+    es: '&nbsp;&nbsp;&nbsp;Cargando'
   },
   done: {
     en: 'Done',
     ru: 'сделанный',
-    fr: 'Terminé'
+    fr: 'Terminé',
+    es: 'Hecho'
   },
   customBotName: {
     en: 'Custom bot name',
     ru: 'Кастомное название бота',
-    fr: 'Nom du bot personnalisé'
+    fr: 'Nom du bot personnalisé',
+    es: 'Nombre personalizado para el bot'
   },
   Name: {
     en: 'Name',
     ru: 'Имя',
-    fr: 'Nom'
+    fr: 'Nom',
+    es: 'Nombre'
   },
   'bot:test': {
     en: 'Test Bot',
     ru: 'Тест бот',
-    fr: 'Bot de test'
+    fr: 'Bot de test',
+    es: 'Bot de prueba'
   },
   'bot:generate': {
     en: 'You can generate your OAuth Token ',
     ru: 'Вы можете создать токен авторизации ',
-    fr: 'Vous pouvez générer votre Token OAuth '
+    fr: 'Vous pouvez générer votre Token OAuth ',
+    es: 'Puedes generar tu Token Oauth'
   },
   here: {
     en: 'here',
     ru: 'тут',
-    fr: 'ici'
+    fr: 'ici',
+    es: 'aquí'
   }
 };
 

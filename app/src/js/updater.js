@@ -2,10 +2,12 @@
 
 const { loadIframe } = require('./js/loadMain'); // eslint-disable-line import/no-unresolved
 
+
 $('#updater p').html(myText.loading[currentLang]);
 
 function showMain() {
   $('.goto_settings').css('display', 'inline-block');
+  $('.goto_chat').css('display', 'inline-block');
   $('#nav').css('display', 'block');
   currentPage = '#main'; // eslint-disable-line no-undef
   loadIframe();
