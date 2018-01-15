@@ -27,6 +27,11 @@ $('.goto_settings').on('click', () => {
   $('.goBack').css('display', 'inline-block');
   goTo('#settings');
 });
+
+$('.goto_chat').on('click', () => {
+  $('.goBack').css('display', 'inline-block');
+  goTo('#chat');
+});
 $('.goBack').on('click', () => {
   if (b4settings && b4settings !== '#main' && !$('#error').length) {
     if (b4settings === '#frame_sr') {
@@ -34,6 +39,7 @@ $('.goBack').on('click', () => {
       $('.goto_settings').css('display', 'inline-block');
     } else {
       $('.goto_sr').css('display', 'inline-block');
+      $('.goto_chat').css('display', 'inline-block');
       $('.goto_settings').css('display', 'inline-block');
     }
     goTo(b4settings);
@@ -41,6 +47,7 @@ $('.goBack').on('click', () => {
     $('.goto_settings').css('display', 'inline-block');
     if ($('#frame_pop').length) {
       $('.goto_sr').css('display', 'inline-block');
+      $('.goto_chat').css('display', 'inline-block');
       goTo('#frame_pop');
     } else {
       goTo('#main');
@@ -53,6 +60,14 @@ function goSr() {
   $('.goto_settings').css('display', 'inline-block');
   goTo('#frame_sr');
 }
+
+function goChat() {
+  $('#nav button').css('display', 'none');
+  $('.goto_chat').css('display', 'inline-block');
+  $('.goto_settings').css('display', 'inline-block');
+  goTo('#chat');
+}
+
 function goPop() {
   $('#nav button').css('display', 'none');
   $('.goto_sr').css('display', 'inline-block');

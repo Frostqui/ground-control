@@ -34,6 +34,7 @@ function loadOtherStuff() {
     const tmp = {
       token: '',
       keys: {},
+      oauth: $('#oauth').val() || '',
       darkMode: $('#darkMode_sub').is(':checked'),
       lang: $('#languageSelection select').val(),
       other: {
@@ -46,6 +47,7 @@ function loadOtherStuff() {
         token: $('#bot-pw').val() || ''
       }
     };
+
     $('.autoC').each(function () {
       tmp.keys[$(this).attr('id')] = $(this).val() || '';
     });
@@ -78,6 +80,7 @@ function loadOtherStuff() {
   $('#getToken').on('click', () => {
     shell.openExternal(`https://${url}/dashboard/account/information`);
   });
+
   $('#getBotOAuth').on('click', () => {
     shell.openExternal('https://twitchapps.com/tmi/');
   });
@@ -193,6 +196,11 @@ function loadOtherStuff() {
           });
         });
       }
+      if (a.oauth) {
+        $('#oauth').val(a.oauth);
+
+      }
+
       if (a.darkMode) {
         $('html').addClass('darkMode');
         $('#darkMode_sub').prop('checked', true);
@@ -214,6 +222,7 @@ function loadOtherStuff() {
       }
       if (a.lang) {
         $('#languageSelection select').val(a.lang);
+
       }
       if (a.bot) {
         if (a.bot.use) {
@@ -275,8 +284,11 @@ function loadOtherStuff() {
   $('select').on('property change keyup', updateS);
   $('darkMode_sub').on('property change mouseup', updateS);
 
+
+
   // Reset Session
   $('#resetSession').on('click', () => {
+
     let sessionUrl = '';
     try {
       sessionUrl = `https://${api}/kappa/v2/sessions/${JSON.parse(atob($('#jwt').val().split('.')[1])).channel}/reset`;

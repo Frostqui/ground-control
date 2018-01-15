@@ -11,6 +11,11 @@ const connectSocket = require('./src/modules/socket');
 const Heap = require('./src/modules/heap');
 const { useCustomBot: customBot } = require('./src/modules/customBot');
 
+
+
+
+
+
 app.disableHardwareAcceleration();
 
 const configFile = path.normalize(`${os.homedir()}/.se-gc/config.json`);

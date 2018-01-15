@@ -35,7 +35,7 @@
           <option value="en" selected>english</option>
           <option value="ru">русский</option>
           <option value="fr">français</option>
-        </select>
+         </select>
       </div>
     </div>
     <h2>{{myText["settings"][currentLang]}}</h2>
@@ -45,11 +45,22 @@
       <input class="mdl-textfield__input" type="text" id="jwt" pattern=".{36}\.[^\.]+\.[^\.]+">
       <label class="mdl-textfield__label" for="jwt">{{myText["jwt"][currentLang]}}</label>
     </div>
+
     <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="show-jwt" onclick="if((!$('#jwt').val()) || $('#jwt').val() === '') { return false; }">
         <input type="checkbox" id="show-jwt" class="mdl-icon-toggle__input">
         <i class="mdl-icon-toggle__label material-icons">visibility</i>
     </label>
+
     <p>{{myText["jwt:link"][currentLang]}}<a id="getToken" style="cursor: pointer;">{{myText["account"][currentLang]}}</a></p>
+
+    <h4>{{myText["oauth"][currentLang]}}</h4>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="width: calc(100vw - 4.3em);">
+        <input class="mdl-textfield__input" type="text" id="oauth" pattern="^oauth:[A-Za-z0-9]+$">
+        <label class="mdl-textfield__label" for="oauth">{{myText["oauth"][currentLang]}}</label>
+      </div>
+
+    
+    <span>{{myText["bot:generate"][currentLang]}}<a id="getBotOAuth" style="cursor: pointer;">{{myText["here"][currentLang]}}</a></span>
 
     <h4>{{myText["keyboard:bindings"][currentLang]}}</h4>
     <div id="keybindings">
